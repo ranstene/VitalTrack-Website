@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="VitalTrack helps people log blood pressure, blood sugar, medicine reminders, health history, and exportable reports."
+    >
+    <title>VitalTrack | Health Logs, Reminders, and Reports</title>
+    <link rel="icon" href="assets/vitaltrack_logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="VitalTrack home">
+        <img src="assets/vitaltrack_logo.png" alt="" width="38" height="38">
+        <span>VitalTrack</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#reports">Reports</a>
+        <a href="#safety">Safety</a>
+        <a class="nav-cta" href="#download">Download</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true">
+          <div class="floating-panel report-float">
+            <span>PDF ready</span>
+            <strong>Doctor Visit</strong>
+            <small>BP, sugar, medicine</small>
+          </div>
+
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="app-bar">
+                <div class="app-brand">
+                  <img src="assets/vitaltrack_logo.png" alt="" width="32" height="32">
+                  <strong>VitalTrack</strong>
+                </div>
+                <span class="bell-dot"></span>
+              </div>
+
+              <div class="profile-row">
+                <span class="avatar">R</span>
+                <div>
+                  <strong>Good evening, Ranssen</strong>
+                  <small>Monday, May 11, 2026</small>
+                </div>
+              </div>
+
+              <div class="summary-card">
+                <div>
+                  <span>Today's Summary</span>
+                  <strong>Your latest health snapshot</strong>
+                </div>
+                <div class="summary-pills">
+                  <b>Taken 2</b>
+                  <b>Next 8:00 PM</b>
+                </div>
+              </div>
+
+              <div class="reading-list">
+                <div class="reading-item teal">
+                  <span></span>
+                  <div>
+                    <small>Blood Pressure</small>
+                    <strong>120 / 80</strong>
+                    <em>mmHg, pulse 72 bpm</em>
+                  </div>
+                  <b>Latest</b>
+                </div>
+                <div class="reading-item blue">
+                  <span></span>
+                  <div>
+                    <small>Blood Sugar</small>
+                    <strong>98 mg/dL</strong>
+                    <em>Fasting</em>
+                  </div>
+                  <b>Latest</b>
+                </div>
+                <div class="reading-item purple">
+                  <span></span>
+                  <div>
+                    <small>Medicine</small>
+                    <strong>Metformin</strong>
+                    <em>1 tablet after dinner</em>
+                  </div>
+                  <b>Next</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-panel medicine-float">
+            <span>Reminder</span>
+            <strong>8:00 PM</strong>
+            <small>Mark as taken</small>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Personal health tracking</p>
+          <h1 id="hero-title">VitalTrack</h1>
+          <p class="hero-text">
+            A calm mobile app for blood pressure, blood sugar, medicine reminders,
+            history, and reports you can bring to your next checkup.
+          </p>
+          <div class="hero-actions" id="download">
+            <a class="button primary" href="../build/app/outputs/flutter-apk/app-debug.apk">Download APK</a>
+            <a class="button secondary" href="#preview">Explore preview</a>
+          </div>
+          <div class="trust-row" aria-label="VitalTrack highlights">
+            <span>Local-first logs</span>
+            <span>PDF and CSV export</span>
+            <span>BP and sugar targets</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="stat-strip" aria-label="VitalTrack app highlights">
+        <div>
+          <strong data-count="3">0</strong>
+          <span>Daily trackers</span>
+        </div>
+        <div>
+          <strong data-count="6">0</strong>
+          <span>Report choices</span>
+        </div>
+        <div>
+          <strong data-count="4">0</strong>
+          <span>Quick actions</span>
+        </div>
+        <div>
+          <strong>PDF</strong>
+          <span>Shareable files</span>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">What it does</p>
+          <h2>Simple tracking for the health details people repeat often.</h2>
+          <p>
+            VitalTrack keeps frequent logs easy to add and easy to review, with
+            status chips, trends, reminders, and saved profile context.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon teal"></span>
+            <h3>Blood pressure</h3>
+            <p>Save systolic, diastolic, pulse, time of day, notes, and target status.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon blue"></span>
+            <h3>Blood sugar</h3>
+            <p>Track fasting, before-meal, after-meal, and random readings in your unit.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon purple"></span>
+            <h3>Medicine</h3>
+            <p>Schedule repeat reminders, review the week, and mark each dose as taken.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon green"></span>
+            <h3>History</h3>
+            <p>Review recent readings, grouped timelines, averages, highs, and trends.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="preview-section" id="preview">
+        <div class="section-heading compact">
+          <p class="eyebrow">App preview</p>
+          <h2>Focused screens for daily use.</h2>
+          <p>
+            Switch between the main parts of VitalTrack and see how the app
+            organizes the most important information.
+          </p>
+        </div>
+
+        <div class="preview-grid">
+          <div class="preview-tabs" role="tablist" aria-label="Preview screens">
+            <button class="tab-button active" type="button" role="tab" aria-selected="true" data-preview="dashboard">
+              Dashboard
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-preview="history">
+              History
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-preview="medicine">
+              Medicine
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-preview="reports">
+              Reports
+            </button>
+          </div>
+
+          <div class="preview-card" aria-live="polite">
+            <div class="preview-copy">
+              <span id="preview-kicker">Daily overview</span>
+              <h3 id="preview-title">Know what changed today.</h3>
+              <p id="preview-text">
+                The dashboard shows the latest blood pressure, blood sugar, and
+                medicine status with quick actions for new logs.
+              </p>
+            </div>
+            <div class="mini-screen" id="preview-screen">
+              <div class="mini-row strong">
+                <span></span>
+                <div>
+                  <b>Today's Summary</b>
+                  <small>BP, sugar, medicine</small>
+                </div>
+              </div>
+              <div class="mini-row teal">
+                <span></span>
+                <div>
+                  <b>120 / 80 mmHg</b>
+                  <small>Within saved target</small>
+                </div>
+              </div>
+              <div class="mini-row blue">
+                <span></span>
+                <div>
+                  <b>98 mg/dL</b>
+                  <small>Fasting</small>
+                </div>
+              </div>
+              <div class="mini-row purple">
+                <span></span>
+                <div>
+                  <b>8:00 PM</b>
+                  <small>Next medicine reminder</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow-section" aria-labelledby="workflow-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">How it fits your day</p>
+          <h2 id="workflow-title">Log, review, export.</h2>
+        </div>
+
+        <div class="workflow-grid">
+          <article>
+            <span>01</span>
+            <h3>Add readings fast</h3>
+            <p>Use large actions for BP, sugar, and medicine instead of searching through menus.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Review trends</h3>
+            <p>See grouped history, recent averages, highest readings, and status labels.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Prepare reports</h3>
+            <p>Choose a date range and export a focused PDF or CSV for backup or review.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reports-section" id="reports">
+        <div class="report-panel">
+          <div class="report-topline">
+            <span>Doctor Visit Report</span>
+            <b>Preview</b>
+          </div>
+          <div class="report-line">
+            <span>Blood pressure readings</span>
+            <strong>12</strong>
+          </div>
+          <div class="report-line">
+            <span>Blood sugar readings</span>
+            <strong>18</strong>
+          </div>
+          <div class="report-line">
+            <span>Medicine logs</span>
+            <strong>31</strong>
+          </div>
+          <div class="report-actions">
+            <span>PDF</span>
+            <span>CSV</span>
+            <span>Save locally</span>
+          </div>
+        </div>
+
+        <div class="section-heading compact">
+          <p class="eyebrow">Reports</p>
+          <h2>Share a clean summary when it is time to review.</h2>
+          <p>
+            VitalTrack includes doctor visit, weekly, monthly, BP, blood sugar,
+            and medicine reports with flexible date ranges.
+          </p>
+          <div class="range-row" aria-label="Available report ranges">
+            <span>7 Days</span>
+            <span>30 Days</span>
+            <span>3 Months</span>
+            <span>Custom</span>
+            <span>All</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="safety-section" id="safety">
+        <div>
+          <p class="eyebrow">Safety and privacy</p>
+          <h2>Personal tracking, not diagnosis.</h2>
+        </div>
+        <div class="safety-copy">
+          <p class="safety-note">
+            VitalTrack is for personal tracking only and is not a medical device.
+          </p>
+          <p>
+            VitalTrack is designed for personal logs, reminders, and exported
+            summaries. It is not a medical device and does not replace advice
+            from a healthcare provider.
+          </p>
+          <p>
+            The app stores tracking context locally and exports files only when
+            you choose to save or share them.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="brand">
+        <img src="assets/vitaltrack_logo.png" alt="" width="34" height="34">
+        <span>VitalTrack</span>
+      </div>
+      <div class="footer-content">
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="support.html">Support</a>
+        </nav>
+        <p>VitalTrack is for personal tracking only and is not a medical device.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
